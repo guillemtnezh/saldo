@@ -183,6 +183,8 @@ class DeudaPage extends StatelessWidget {
 
                         Navigator.pop(context);
                         Navigator.pop(context);
+
+                        constructor.makePersons();
                       },
                       child: Text('Sí, borrar.'),
                     ),
@@ -309,6 +311,7 @@ class _AddPersonPageState extends State<AddPersonPage> {
               constructor.addPerson(myNombre.text, x);
               //constructor.makeConcepts(0);
               Navigator.pop(context);
+              constructor.makePersons();
             },
           ),
         ],
